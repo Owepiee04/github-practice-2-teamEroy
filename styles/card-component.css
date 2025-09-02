@@ -1,0 +1,45 @@
+#card-container{
+    display : flex;
+    gap : 20px;
+    padding : 20px;
+    background-color: red;
+    justify-content: center;
+    height : auto;
+}
+
+.card{
+    background-color : hsl(300, 43%, 22%);
+    padding : 20px;
+    border-radius : 20px;
+    display : flex;
+    flex-direction: column;
+    height : auto;
+
+}
+
+.card img{
+    height : 40px;
+    border-radius : 20px;
+}
+
+.card-header{
+    display : flex;
+    align-items : center;
+    gap : 20px;
+    height : auto;
+}
+
+.header-text {
+    padding : 0px;
+    margin : 0px;
+}
+.header-text h2{
+    margin : 0px;
+}
+.header-text p{
+    margin : 0px;
+}
+
+.card2{
+    transform : translateY(10px);
+}
