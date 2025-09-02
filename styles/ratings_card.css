@@ -1,5 +1,20 @@
 :root {
   --background-color: hsl(300, 24%, 96%);
+  --text-color: hsl(300, 43%, 22%);
+  --icon-color: #EB964E;
+}
+
+
+.league-spartan-text {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+#ratings {
+  width: fit-content;
 }
 
 .rating-card-1,
@@ -9,11 +24,22 @@
   align-items: center;
   gap: 10px;
   background-color: var(--background-color);
-  margin: 10px;
-  padding: 0 15px;
-  width: 350px;
+  margin-top: 10px;
+  width: 380px;
+  border-radius: 5px;
 }
 
 .stars {
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: var(--icon-color);
+
+}
+
+.rating-card-2 {
+  margin-left: 50px;
+}
+
+.rating-card-3 {
+  margin-left: 100px;
 }
