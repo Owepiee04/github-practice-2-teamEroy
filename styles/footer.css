@@ -1,4 +1,8 @@
 /* Footer component styles (extracted from footer.html template) */
+*{
+	margin : 0px;
+	margin-bottom : 0px;
+}
 .site-footer {
 	--clr-bg: hsl(300, 43%, 22%);
 	--clr-accent: hsl(333, 80%, 67%);
