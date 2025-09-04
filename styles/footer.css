@@ -1,0 +1,58 @@
+/* Footer component styles (extracted from footer.html template) */
+*{
+	margin : 0px;
+	margin-bottom : 0px;
+	margin-top : 0px;
+}
+.site-footer {
+	--clr-bg: hsl(300, 43%, 22%);
+	--clr-accent: hsl(333, 80%, 67%);
+	--clr-light: hsl(300, 24%, 96%);
+	--clr-text: hsl(0,0%,100%);
+	background: var(--clr-bg);
+	color: var(--clr-light);
+	font-family: 'League Spartan', system-ui, sans-serif;
+	/* margin-top: 3rem; */
+}
+.site-footer a {
+	color: var(--clr-light);
+	text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+	color: var(--clr-accent);
+}
+.site-footer .footer-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1.5rem 1rem 2.25rem;
+	display: grid;
+	gap: 1.25rem;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.site-footer .brand {
+	font-weight: 700;
+	font-size: 1.25rem;
+	color: var(--clr-text);
+}
+.site-footer .tagline {
+	margin: .35rem 0 0;
+	font-size: .85rem;
+	color: var(--clr-light);
+	opacity: .85;
+}
+.site-footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	gap: .4rem;
+}
+.site-footer .legal {
+	grid-column: 1 / -1;
+	text-align: center;
+	margin-top: 1rem;
+	font-size: .7rem;
+	letter-spacing: .5px;
+	opacity: .75;
+}

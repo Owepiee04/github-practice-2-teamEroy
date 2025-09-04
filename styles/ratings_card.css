@@ -1,0 +1,72 @@
+:root {
+  --background-color: hsl(300, 24%, 96%);
+  --text-color: hsl(300, 43%, 22%);
+  --icon-color: #EB964E;
+}
+
+
+.league-spartan-text {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+#ratings {
+  width: fit-content;
+}
+
+.rating-card-1,
+.rating-card-2,
+.rating-card-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--background-color);
+  margin-top: 10px;
+  width: 380px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  flex-shrink : 1;
+  height : 45px;
+}
+
+.rating-card-1:hover,
+.rating-card-2:hover,
+.rating-card-3:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.stars {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: var(--icon-color);
+}
+
+.rating-card-2 {
+  margin-left: 50px;
+}
+
+.rating-card-3 {
+  margin-left: 100px;
+}
+
+@media screen and (max-width : 600px){
+  .rating-card-2{
+    margin-left : 0px;
+  }
+  .rating-card-3 {
+  margin-left: 0px;
+  }
+
+  .rating-card-1,
+  .rating-card-2,
+  .rating-card-3{
+    flex-direction : column;
+    height : auto;
+    padding : 10px;
+  }
+}
