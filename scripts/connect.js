@@ -2,11 +2,23 @@ import loadCardComponent from "./card-component.js";
 import loadFooterComponent from "./footer.js";
 import loadRatingsCardComponent from "./ratings-card.js";
 import loadAboutUsComponent from "./about_us.js";
+import loadNavBarComponent from "./navbar.js";
+import loadTextComponent from "./text.js";
 const body = document.body;
 
 
 document.addEventListener("DOMContentLoaded", async () => {
     const body = document.getElementById('box-element');
+
+
+
+    const navBarComponent = await loadNavBarComponent();
+
+    body.appendChild(navBarComponent);
+
+    const textComponent = await loadTextComponent();
+
+    body.appendChild(textComponent);
 
     // const aboutUs = await loadAboutUsComponent();
     // body.appendChild(aboutUs);
