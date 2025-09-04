@@ -29,6 +29,7 @@
   border-radius: 5px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   cursor: pointer;
+  flex-shrink : 1;
   height : 45px;
 }
 
@@ -51,4 +52,21 @@
 
 .rating-card-3 {
   margin-left: 100px;
+}
+
+@media screen and (max-width : 600px){
+  .rating-card-2{
+    margin-left : 0px;
+  }
+  .rating-card-3 {
+  margin-left: 0px;
+  }
+
+  .rating-card-1,
+  .rating-card-2,
+  .rating-card-3{
+    flex-direction : column;
+    height : auto;
+    padding : 10px;
+  }
 }

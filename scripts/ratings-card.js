@@ -7,3 +7,4 @@ export default async function loadRatingsCardComponent() {
   const card = doc.getElementById("ratings");
   return card.cloneNode(true);
 }
+
