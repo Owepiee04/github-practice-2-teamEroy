@@ -14,17 +14,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const navBarComponent = await loadNavBarComponent();
 
-    body.appendChild(navBarComponent);
+    body.prepend(navBarComponent);
+
+    const textFlex = document.getElementById('text-and-rating-flex');
 
     const textComponent = await loadTextComponent();
 
-    body.appendChild(textComponent);
-
-    // const aboutUs = await loadAboutUsComponent();
-    // body.appendChild(aboutUs);
+    textFlex.appendChild(textComponent);
+ 
     const ratingsComponent = await loadRatingsCardComponent();
 
-    body.appendChild(ratingsComponent);
+    textFlex.appendChild(ratingsComponent);
+    // const aboutUs = await loadAboutUsComponent();
+    // body.appendChild(aboutUs);
+   
 
     const cardComponent = await loadCardComponent();
   

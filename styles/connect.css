@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+}
+
+#text-and-rating-flex{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    /* background-color: aqua; */
+    height : 50vh;
+}
+
+.container{
+    flex-basis : 50vw;
+    /* background-color : pink; */
+
+}
+
+@media screen and (max-width : 600px){
+    #text-and-rating-flex{
+        flex-direction : column;
+    }
+}
