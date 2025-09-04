@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+}
+
+#text-and-rating-flex{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    /* background-color: aqua; */
+    height : auto;
+
+}
+
+.container{
+    flex-basis : 50vw;
+    /* background-color : pink; */
+}
+
+
+#ratings{
+    flex-shrink : 1;
+}
+
+.rating-card-1,
+.rating-card-2,
+.rating-card-3{
+    flex-shrink : 1;
+}
+@media screen and (max-width : 600px){
+    #text-and-rating-flex{
+        flex-direction : column;
+        height : auto;
+    }
+}
+

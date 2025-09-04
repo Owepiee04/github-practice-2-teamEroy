@@ -19,11 +19,13 @@ body {
 }
 
 .header {
-    background: hsl(300, 43%, 22%); /* Very Dark Magenta */
-    color: hsl(0, 0%, 100%); /* White */
+    color:hsl(300, 43%, 22%); /* Very Dark Magenta */
+ /* White */
     padding: 1rem;
     text-align: center;
     border-radius: 10px;
+    margin-top : 10px;
+    width : 100vw;
 }
 
 main {

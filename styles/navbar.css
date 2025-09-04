@@ -31,13 +31,13 @@
 	margin: 0;
 	padding: 0;
 }
-.site-nav .nav-menu a {
+.site-nav .nav-menu li {
 	position: relative;
 	padding: .25rem .4rem;
 	border-radius: 4px;
 }
-.site-nav .nav-menu a:hover,
-.site-nav .nav-menu a:focus {
+.site-nav .nav-menu li:hover,
+.site-nav .nav-menu li:focus {
 	background: hsl(300, 24%, 96%);
 	color: hsl(300, 43%, 22%);
 }
@@ -48,6 +48,7 @@
 	padding: .4rem .85rem;
 	border-radius: 999px;
 }
+
 .site-nav .btn-primary:hover,
 .site-nav .btn-primary:focus {
 	filter: brightness(1.05);
@@ -78,6 +79,6 @@
 	}
 	.site-nav .nav-menu.show { display: flex; }
 	.site-nav .nav-menu li { width: 100%; }
-	.site-nav .nav-menu a { display: block; width: 100%; padding: .6rem 0; }
+	.site-nav .nav-menu li { display: block; width: 100%; padding: .6rem 0; }
 	.site-nav .btn-primary { align-self: flex-start; }
 }
